@@ -19,13 +19,13 @@ const Skills: React.FC = () => {
     {
       title: 'AI & Machine Learning',
       icon: <Brain className="w-8 h-8" />,
-      skills: ['Langchain', 'GeminiAI', 'Streamlit',],
+      skills: ['GeminiAI', 'Streamlit',],
       color: 'from-purple-600 to-pink-500'
     },
     {
       title: 'Tools & Technologies',
       icon: <Wrench className="w-8 h-8" />,
-      skills: ['Flask', 'Django', 'React', 'Node.js', 'MongoDB'],
+      skills: ['React', 'MongoDB'],
       color: 'from-pink-500 to-red-500'
     }
   ];

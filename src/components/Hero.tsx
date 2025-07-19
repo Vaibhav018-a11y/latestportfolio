@@ -8,11 +8,10 @@ const Hero: React.FC = () => {
   const [isTyping, setIsTyping] = useState(true);
   
   const roles = [
-    "Full Stack Developer",
     "DevOps Engineer", 
     "AI Enthusiast",
-    "Problem Solver",
-    "Innovation Driver"
+    "Problem Solver"
+   
   ];
 
   const typewriterMessages = [

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Download, X, FileText } from 'lucide-react';
+import { Download, X, FileText, Image } from 'lucide-react';
 
 const About: React.FC = () => {
   const [showResumeModal, setShowResumeModal] = useState(false);
@@ -33,7 +33,12 @@ const About: React.FC = () => {
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 p-1">
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
                   <div className="w-64 h-64 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-600/20 flex items-center justify-center">
-                    <FileText className="w-32 h-32 text-cyan-400" />
+                    <img
+                      src="/assets/image.jpg"
+                      alt="Vaibhav Kr. Gupta"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+
                   </div>
                 </div>
               </div>
@@ -117,7 +122,7 @@ const About: React.FC = () => {
                   onClick={() => {
                     // Create a downloadable resume
                     const link = document.createElement('a');
-                    link.href = '/resume.pdf'; // You would need to add the actual resume PDF
+                    link.href = '/assets/adhar card.pdf'; // You would need to add the actual resume PDF
                     link.download = 'Vaibhav_Kr_Gupta_Resume.pdf';
                     link.click();
                   }}
